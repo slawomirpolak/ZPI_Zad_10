@@ -26,5 +26,14 @@ public class Problem_10Test {
         assertEquals(expResult, result);
        
     }
-    
+     @Test
+    public void testIsPrime() {
+        System.out.println("Testowanie metody 2 isPrime");
+        int n = 95891;
+        Problem_10 instance = new Problem_10();
+        boolean expResult = true;
+        boolean result = instance.isPrime(n);
+        assertEquals(expResult, result);
+       
+    }
 }
