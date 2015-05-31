@@ -13,7 +13,14 @@ import static org.junit.Assert.*;
  */
 public class Problem_10Test {
    
-  
+   @Test
+    public void testSolve() {
+        System.out.println("Testowanie metody Solve");
+        long expResult = 142913828922L;
+        long result = Problem_10.Solve();
+        assertEquals(expResult, result);
+
+    }
  
 
     @Test
