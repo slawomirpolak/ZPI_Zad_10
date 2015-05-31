@@ -3,6 +3,32 @@ package problem_10;
 
 public class Problem_10 {
 
+public static long Solve()
+ {
+    
+        Problem_10 prob_10Obj = new Problem_10();
+         
+        //Suma typu Long
+        long Sum = 0;
+         
+        //  licznik ustawiamy na 1 
+        int counter = 1;
+         
+        // dopoki licznik bedzie mniejszy niz 2 miliony
+        while (counter < 2000000) {
+             
+            // sprawdzenei czy licznik jest liczba pierwsza, jesli tak, dodaj go do sumy
+            if (prob_10Obj.isPrime(counter)) {
+                Sum += counter;
+            }
+            // zwiekszanie licznika o 2
+            counter += 2;
+        }
+        
+       //zwroc Sume
+        return Sum+2;
+}
+		
     public boolean isPrime(int n)
         {
             //sprawdzenie czy n-testowana liczba, wynosi 1 
