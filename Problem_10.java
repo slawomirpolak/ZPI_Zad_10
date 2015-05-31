@@ -3,6 +3,12 @@ package problem_10;
 
 public class Problem_10 {
 
+public static void main(String [] args)
+{
+        //zwiekszenie koncowej liczny o 2 
+         System.out.println("Liczba wynosi: " +Solve());
+    }
+	
 public static long Solve()
  {
     
