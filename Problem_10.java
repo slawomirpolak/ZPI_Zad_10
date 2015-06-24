@@ -3,12 +3,25 @@ package problem_10;
 
 public class Problem_10 {
 
+# Public: Static function to write the solution. 
+#
+# #=> 'Liczba wynosi 142913828922'
+# 
+# Returns nothing.
+
 public static void main(String [] args)
 {
         //zwiekszenie koncowej liczny o 2 
          System.out.println("Liczba wynosi: " +Solve());
     }
 	
+# Public: Solve 10th Eulier's problem: Find the sum of all the primes below two million.
+# 	
+# Examples
+#	Solve()
+# #=>142913828922
+#
+
 public static long Solve()
  {
     
@@ -35,6 +48,19 @@ public static long Solve()
         return Sum+2;
 }
 		
+# Public: Check is some number is prime number
+#
+# n - the integer number to check
+#
+# Examples
+#
+#	isPrime(21)
+#	#=> false
+#
+#	isPrime(13)
+#	#=> true
+#			
+
     public boolean isPrime(int n)
         {
             //sprawdzenie czy n-testowana liczba, wynosi 1 
